@@ -30,6 +30,7 @@ struct ContentView: View {
                         Toggle("Add extra sprinkles", isOn: $order.addSprinkles)
                     }
                 }
+                .tint(.teal)
                 Section {
                     NavigationLink {
                         AddressView(order: order)
