@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C34A12E287DAD38008F47F8 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 7C34A12D287DAD38008F47F8 /* Introspect */; };
 		7C9DC5E5286F5A86004A08DC /* CupcakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DC5E4286F5A86004A08DC /* CupcakeCornerApp.swift */; };
 		7C9DC5E7286F5A86004A08DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DC5E6286F5A86004A08DC /* ContentView.swift */; };
 		7C9DC5E9286F5A86004A08DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C9DC5E8286F5A86004A08DC /* Assets.xcassets */; };
 		7C9DC5EC286F5A86004A08DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C9DC5EB286F5A86004A08DC /* Preview Assets.xcassets */; };
+		7C9DC5F3286F5ABF004A08DC /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DC5F2286F5ABF004A08DC /* Order.swift */; };
+		7C9DC5F5286F72F3004A08DC /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DC5F4286F72F3004A08DC /* AddressView.swift */; };
+		7C9DC5F7286F740B004A08DC /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DC5F6286F740B004A08DC /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		7C9DC5E6286F5A86004A08DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7C9DC5E8286F5A86004A08DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C9DC5EB286F5A86004A08DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7C9DC5F2286F5ABF004A08DC /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		7C9DC5F4286F72F3004A08DC /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		7C9DC5F6286F740B004A08DC /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C34A12E287DAD38008F47F8 /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +61,9 @@
 			children = (
 				7C9DC5E4286F5A86004A08DC /* CupcakeCornerApp.swift */,
 				7C9DC5E6286F5A86004A08DC /* ContentView.swift */,
+				7C9DC5F4286F72F3004A08DC /* AddressView.swift */,
+				7C9DC5F6286F740B004A08DC /* CheckoutView.swift */,
+				7C9DC5F2286F5ABF004A08DC /* Order.swift */,
 				7C9DC5E8286F5A86004A08DC /* Assets.xcassets */,
 				7C9DC5EA286F5A86004A08DC /* Preview Content */,
 			);
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = CupcakeCorner;
+			packageProductDependencies = (
+				7C34A12D287DAD38008F47F8 /* Introspect */,
+			);
 			productName = CupcakeCorner;
 			productReference = 7C9DC5E1286F5A86004A08DC /* CupcakeCorner.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 7C9DC5D8286F5A86004A08DC;
+			packageReferences = (
+				7C34A12C287DAD38008F47F8 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+			);
 			productRefGroup = 7C9DC5E2286F5A86004A08DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C9DC5F3286F5ABF004A08DC /* Order.swift in Sources */,
+				7C9DC5F5286F72F3004A08DC /* AddressView.swift in Sources */,
+				7C9DC5F7286F740B004A08DC /* CheckoutView.swift in Sources */,
 				7C9DC5E7286F5A86004A08DC /* ContentView.swift in Sources */,
 				7C9DC5E5286F5A86004A08DC /* CupcakeCornerApp.swift in Sources */,
 			);
@@ -339,6 +359,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C34A12C287DAD38008F47F8 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7C34A12D287DAD38008F47F8 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C34A12C287DAD38008F47F8 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7C9DC5D9286F5A86004A08DC /* Project object */;
 }
