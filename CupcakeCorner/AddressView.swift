@@ -35,7 +35,7 @@ struct AddressView: View {
                 Color(UIColor.systemGroupedBackground)
                 Image("cupcakeBackground")
                     .resizable(resizingMode: .tile)
-                    .opacity(colorScheme == .dark ? 0.1 : 1.0)
+                    .opacity(colorScheme == .dark ? 0.1 : 0.5)
             }
             .edgesIgnoringSafeArea(.all)
         )
